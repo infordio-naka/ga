@@ -4,7 +4,7 @@ from abc import ABCMeta, abstractmethod
 class GA(object):
     __metaclass__ = ABCMeta
     @abstractmethod
-    def evaluate(self, ind):
+    def evaluate(self, ind, args):
         pass
 
     @abstractmethod

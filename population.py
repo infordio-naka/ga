@@ -35,7 +35,7 @@ class Population(object):
         """
         return (self.ppl)
 
-    def calcFitness(self, func):
+    def calcFitness(self, func, args=None):
         """
         calculation fitness par individual
 
@@ -43,7 +43,7 @@ class Population(object):
         """
         for ind in self.ppl:
             individual = ind.getGene()
-            ind.setFitness(func(individual))
+            ind.setFitness(func(individual, args))
 
     def show(self):
         """

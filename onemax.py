@@ -15,7 +15,7 @@ if (six.PY3):
 from copy        import deepcopy
 
 class Onemax(GA):
-    def evaluate(self, ind):
+    def evaluate(self, ind, args):
         fitness = sum(ind)
         return (fitness)
 

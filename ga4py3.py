@@ -3,7 +3,7 @@ from abc import ABCMeta, abstractmethod
 
 class GA(metaclass=ABCMeta):
     @abstractmethod
-    def evaluate(self, ind):
+    def evaluate(self, ind, args):
         pass
 
     @abstractmethod
