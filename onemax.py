@@ -42,6 +42,8 @@ class Onemax(GA):
         for i in range(args.revolution):
             # Evaluation population in individuals
             ppl.calcFitness(self.evaluate)
+            if ((i%10)==0):
+                ppl.show()
 
             # Select parents
             if (args.elite):

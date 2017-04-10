@@ -51,7 +51,8 @@ class Population(object):
         """
         print("Population Class")
         print("\tpopulation is ", self.ppl)
-        for ind in self.ppl:
+        ppl = sorted(self.ppl, key=lambda x:x.fit, reverse=True)
+        for ind in ppl:
             ind.show()
 
 if __name__ == "__main__":
